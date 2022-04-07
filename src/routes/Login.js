@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Login.module.css";
 
 function Login() {
@@ -27,7 +28,15 @@ function Login() {
             <input type="text" placeholder="이름" required />
             <input type="text" placeholder="직위" required />
             <input type="text" placeholder="소속" required />
-            <button>설문시작</button>
+            <button>
+              <Link
+                to="./survey"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                {" "}
+                설문시작
+              </Link>
+            </button>
             <p className={styles.message}>
               연구 내용이 궁금하신가요? <a href="#">읽어보기</a>
             </p>
