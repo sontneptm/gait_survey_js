@@ -2,18 +2,12 @@ import styles from "./Survey.module.css";
 
 function Survey() {
   return (
-    <section title=".squaredThree">
-      <div className={styles.squaredThree}>
-        <input
-          type="checkbox"
-          value="None"
-          id="squaredThree"
-          name="check"
-          checked
-        />
-        <label for="squaredThree"></label>
+    <div className={styles.container}>
+      <div className={styles.round}>
+        <input type="checkbox" checked id="checkbox" />
+        <label for="checkbox"></label>
       </div>
-    </section>
+    </div>
   );
 }
 
