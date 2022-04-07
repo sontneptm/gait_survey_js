@@ -18,7 +18,7 @@ function Home() {
       </div>
 
       <div className={styles.player__box}>
-        {startSurvey ? <VideoPlayer /> : <Login />}
+        {startSurvey ? <VideoPlayer /> : <h2>loading...</h2>}
       </div>
 
       <div className={styles.player__box}>
