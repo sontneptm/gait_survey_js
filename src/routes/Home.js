@@ -1,10 +1,29 @@
 import VideoPlayer from "../components/VideoPlayer";
+import styles from "./Home.module.css";
+import Login from "./Login";
+import Survey from "../components/Survey";
+import { useState } from "react";
 
 function Home() {
+  const [startSurvey, setStartSurvey] = useState(false);
+
   return (
     <div>
-      <h1>Hello Guri!</h1>
-      <VideoPlayer />
+      <div className={styles.logo__box}>
+        <img
+          className={styles.logo}
+          src="images/msdl_logo.png"
+          alt="please report sontneptm2@gmail"
+        ></img>
+      </div>
+
+      <div className={styles.player__box}>
+        {startSurvey ? <VideoPlayer /> : <Login />}
+      </div>
+
+      <div className={styles.player__box}>
+        {startSurvey ? <Survey /> : <h2>wait...</h2>}
+      </div>
     </div>
   );
 }
