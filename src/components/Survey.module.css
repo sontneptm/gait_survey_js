@@ -1,0 +1,9 @@
+.squaredThree {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.squaredThree hover after {
+  opacity: 0.3;
+}
