@@ -1,11 +1,10 @@
 import VideoPlayer from "../components/VideoPlayer";
 import styles from "./Home.module.css";
-import Login from "./Login";
 import Survey from "../components/Survey";
 import { useState } from "react";
 
 function Home() {
-  const [startSurvey, setStartSurvey] = useState(false);
+  const [startSurvey, setStartSurvey] = useState(true);
 
   return (
     <div>
