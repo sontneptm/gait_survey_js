@@ -1,10 +1,10 @@
-import Video from "../components/VideoPlayer";
+import VideoPlayer from "../components/VideoPlayer";
 
 function Home() {
   return (
     <div>
       <h1>Hello Guri!</h1>
-      <Video />
+      <VideoPlayer />
     </div>
   );
 }
