@@ -1,10 +1,10 @@
 import styles from "./CheckBox.module.css";
 
-function CheckBox(id) {
+function CheckBox() {
   return (
     <div className={styles.container}>
       <div className={styles.round}>
-        <input type={"checkbox"} id={"checkbox"} />
+        <input type="checkbox" id={"checkbox"}></input>
         <label htmlFor="checkbox"></label>
       </div>
     </div>
