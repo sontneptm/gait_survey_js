@@ -67,7 +67,7 @@ p {
   transition: ease 0.5s;
 }
 
-.rb-tab-active .rb-spot {
+.rb_tab_active .rb_spot {
   background: rgba(0, 0, 0, 0.35);
   border: 2px solid rgba(243, 49, 128, 0.6);
 }
@@ -76,6 +76,17 @@ p {
 .button-box {
   padding: 10px 0;
   text-align: center;
+}
+
+.emotion_l {
+  font-size: 15px;
+  width: 80px;
+  transform: translate(-30%, 0%);
+}
+.emotion_r {
+  font-size: 15px;
+  width: 80px;
+  transform: translate(0%, 0%);
 }
 
 button {
